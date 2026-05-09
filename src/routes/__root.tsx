@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
       { name: "twitter:description", content: "🛍️ As melhores ofertas com descontos imperdíveis! Produtos mais vendidos, preços baixos e link direto pra comprar. Aproveite e Compre!" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/nhOAASTJHMQRvu7tE1xR1DIiAVk2/social-images/social-1778366182573-Promotional_banner_for_deals_web…_202605091936.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/nhOAASTJHMQRvu7tE1xR1DIiAVk2/social-images/social-1778366182573-Promotional_banner_for_deals_web…_202605091936.webp" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/nhOAASTJHMQRvu7tE1xR1DIiAVk2/social-images/social-1778369001970-Site_aprroveiteecompre.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/nhOAASTJHMQRvu7tE1xR1DIiAVk2/social-images/social-1778369001970-Site_aprroveiteecompre.webp" },
     ],
     links: [
       {
