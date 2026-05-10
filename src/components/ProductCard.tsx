@@ -43,9 +43,11 @@ export function ProductCard({ product }: { product: Product }) {
           <span className="text-gray-500">| {product.sales}</span>
         </div>
 
-        <div className="inline-flex w-fit items-center rounded-md bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-900">
-          {product.gainType} {product.gainPercent}%
-        </div>
+        {product.gainPercent > 0 && (
+          <div className="inline-flex w-fit items-center rounded-md bg-blue-50 px-2.5 py-1 text-xs font-bold text-blue-900">
+            {product.gainType} {product.gainPercent}%
+          </div>
+        )}
 
         <div className="flex flex-col gap-0.5">
           <span className="text-sm text-gray-400 line-through">
