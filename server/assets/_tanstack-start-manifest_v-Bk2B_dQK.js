@@ -1,0 +1,4 @@
+const tsrStartManifest = () => ({ routes: { __root__: { filePath: "/home/runner/work/aproveitecompre/aproveitecompre/src/routes/__root.tsx", children: ["/", "/$category", "/admin"], assets: void 0, preloads: ["/assets/index-BZ0DhoUi.js"] }, "/": { filePath: "/home/runner/work/aproveitecompre/aproveitecompre/src/routes/index.tsx", children: void 0, assets: void 0, preloads: ["/assets/index-CB2sAEoo.js", "/assets/CategoryNav-Ch1-0MgX.js"] }, "/$category": { filePath: "/home/runner/work/aproveitecompre/aproveitecompre/src/routes/$category.tsx", children: void 0, assets: void 0, preloads: ["/assets/_category-CLk3lAHm.js", "/assets/CategoryNav-Ch1-0MgX.js", "/assets/_category-BOcfqUzY.js"] }, "/admin": { filePath: "/home/runner/work/aproveitecompre/aproveitecompre/src/routes/admin.tsx", children: void 0, assets: void 0, preloads: ["/assets/admin-BXn4nRTY.js"] } }, clientEntry: "/assets/index-BZ0DhoUi.js" });
+export {
+  tsrStartManifest
+};
