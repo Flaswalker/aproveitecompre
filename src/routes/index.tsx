@@ -56,6 +56,15 @@ function Index() {
       <footer className="mt-12 py-8 text-center text-xs text-gray-400">
         © {new Date().getFullYear()} Vitrine de Ofertas
       </footer>
+
+      <a
+        href="https://cristoteama.lovable.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 left-4 z-50 inline-flex items-center gap-2 rounded-full bg-black px-4 py-2 text-xs font-semibold text-white shadow-lg transition-transform hover:scale-105"
+      >
+        ✝️ Cristo Te Ama
+      </a>
     </div>
   );
 }
