@@ -3,10 +3,12 @@ import { useEffect, useState, type FormEvent } from "react";
 import {
   ADMIN_PASSWORD,
   AUTH_KEY,
+  CATEGORIES,
   deleteProduct,
   getProducts,
   upsertProduct,
   type BadgeType,
+  type CategoryLabel,
   type GainType,
   type Product,
 } from "@/lib/products";
@@ -87,6 +89,7 @@ const EMPTY: Product = {
   promoPrice: 0,
   discountPercent: 0,
   affiliateLink: "",
+  category: "Utilidades",
 };
 
 function AdminPanel({ onLogout }: { onLogout: () => void }) {
@@ -213,6 +216,18 @@ function AdminPanel({ onLogout }: { onLogout: () => void }) {
               <label className={label}>Link de afiliado</label>
               <input className={input} type="url" required value={editing.affiliateLink}
                 onChange={(e) => setEditing({ ...editing, affiliateLink: e.target.value })} />
+            </div>
+            <div>
+              <label className={label}>Categoria</label>
+              <select
+                className={input}
+                value={editing.category}
+                onChange={(e) => setEditing({ ...editing, category: e.target.value as CategoryLabel })}
+              >
+                {CATEGORIES.map((c) => (
+                  <option key={c.slug} value={c.label}>{c.label}</option>
+                ))}
+              </select>
             </div>
             <div className="flex gap-2 pt-2">
               <button type="submit" className="flex-1 rounded-lg bg-[#00a650] py-2.5 text-sm font-bold text-white hover:bg-[#008a42]">
