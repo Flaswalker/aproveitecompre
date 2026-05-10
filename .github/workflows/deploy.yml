@@ -27,8 +27,14 @@ jobs:
       - name: Build project
         run: bun run build
 
+      - name: Copy client files to root
+        run: |
+          cp -r client/* .
+          rm -rf client server
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: .
+          clean: true
