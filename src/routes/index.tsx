@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { getProducts, type Product } from "@/lib/products";
 import { ProductCard } from "@/components/ProductCard";
+import { CategoryNav } from "@/components/CategoryNav";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,6 +40,8 @@ function Index() {
           </p>
         </div>
       </header>
+
+      <CategoryNav />
 
       <main className="mx-auto max-w-7xl px-4 py-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
